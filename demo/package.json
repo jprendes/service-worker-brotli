@@ -1,0 +1,21 @@
+{
+    "name": "demo",
+    "scripts": {
+        "webpack-build": "webpack build --mode=production --stats-children",
+        "parcel-build": "parcel build --public-url . --dist-dir dist/parcel --no-source-maps"
+    },
+    "source": "src/index.html",
+    "dependencies": {
+        "service-worker-brotli": "file:../"
+    },
+    "devDependencies": {
+        "@kkirbatski/parcel-resolver-require-resolve": "^1.0.4",
+        "@parcel/compressor-brotli": "^2.8.3",
+        "@parcel/compressor-gzip": "^2.8.3",
+        "compression-webpack-plugin": "^9.0.0",
+        "html-webpack-plugin": "^5.3.2",
+        "parcel": "^2.8.3",
+        "webpack": "^5.76.3",
+        "webpack-cli": "^5.0.1"
+    }
+}

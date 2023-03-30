@@ -1,0 +1,28 @@
+{
+    "name": "service-worker-brotli",
+    "version": "0.0.1",
+    "description": "A service worker to fetch brotli precompressed assets from CDNs that don't support it",
+    "keywords": ["brotli", "assets", "service-worker"],
+    "homepage": "https://github.com/jprendes/service-worker-brotli",
+    "bugs": "https://github.com/jprendes/service-worker-brotli/issues",
+    "main": "src/service-worker.js",
+    "files": [
+        "src/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jprendes/service-worker-brotli"
+    },
+    "author": "Jorge Prendes",
+    "license": "(MIT OR Apache-2.0)",    
+    "private": false,
+    "dependencies": {
+        "tiny-brotli-dec-wasm": "^1.0.0",
+        "mime": "^3.0.0"
+    },
+    "exports": {
+        ".": "./src/service-worker.js",
+        "./utils.js": "./src/utils.js",
+        "./register.js": "./src/register.js"
+    }
+}

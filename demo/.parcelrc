@@ -1,0 +1,7 @@
+{
+    "extends": ["@parcel/config-default"],
+    "resolvers": ["...", "@kkirbatski/parcel-resolver-require-resolve"],
+    "compressors": {
+        "*.{html,js,wasm,txt,map}": ["...", "@parcel/compressor-brotli", "@parcel/compressor-gzip"]
+    }
+}
