@@ -4,7 +4,7 @@ A service worker to fetch brotli precompressed assets from CDNs that don't suppo
 
 The service worker implements a _network-first_ strategy for `text/html` assets, and a _cache-first_ strategy for all other assets.
 
-See a the [live demo](https://jprendes.github.io/service-worker-brotli/).
+See a [live demo](https://jprendes.github.io/service-worker-brotli/).
 
 ## Motivation
 
