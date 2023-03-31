@@ -1,6 +1,6 @@
 {
     "name": "service-worker-brotli",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "A service worker to fetch brotli precompressed assets from CDNs that don't support it",
     "keywords": ["brotli", "assets", "service-worker"],
     "homepage": "https://github.com/jprendes/service-worker-brotli",
