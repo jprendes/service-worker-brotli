@@ -4,7 +4,9 @@ A service worker to fetch brotli precompressed assets from CDNs that don't suppo
 
 The service worker implements a _network-first_ strategy for `text/html` assets, and a _cache-first_ strategy for all other assets.
 
-# Motivation
+See a the [live demo](https://jprendes.github.io/service-worker-brotli/).
+
+## Motivation
 
 In many CDNs you can upload a precompressed `gzip` versions of a file.
 They will then serve the compressed file if the client supports it.
@@ -38,13 +40,13 @@ navigator.serviceWorker.register(new URL("./service-worker.js", import.meta.url)
 
 See the `demo` folder for an example for `webpack` and `parcel`.
 
-## The `register.js` import
+## Service worker registration
 
 By default a service worker will not control the page after a hard refresh and all `fetch`es will go straight to the network.
 That means requesting potentially large uncompressed asset files from the server.
-This import patches `navigator.serviceWorker.register` to allow the service worker to control the page even after a hard refresh.
+Importing `service-worker-brotli/register.js` patches `navigator.serviceWorker.register` to allow the service worker to control the page even after a hard refresh.
 
-## The `utils.js` import
+## Other use cases
 
 The default `service-worker-brotli` import implements a _network-first_ strategy for `text/html` assets, and a _cache-first_ strategy for all other assets. It implements no pre-caching.
 
